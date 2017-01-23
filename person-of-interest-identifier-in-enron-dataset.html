@@ -2,7 +2,7 @@
 <html lang="english">
 <head>
         <meta charset="utf-8" />
-        <title>Christopher Tyndall</title>
+        <title>Person-of-Interest Identifier in Enron Dataset</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
@@ -14,13 +14,18 @@
         <header id="banner" class="body">
                 <h1><a href="/">Christopher Tyndall </a></h1>
                 <nav><ul>
-                    <li><a href="/category/machine-learning.html">Machine Learning</a></li>
+                    <li class="active"><a href="/category/machine-learning.html">Machine Learning</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/person-of-interest-identifier-in-enron-dataset.html" rel="bookmark"
+           title="Permalink to Person-of-Interest Identifier in Enron Dataset">Person-of-Interest Identifier in Enron Dataset</a></h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/person-of-interest-identifier-in-enron-dataset.html">Person-of-Interest Identifier in Enron Dataset</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-10-16T00:00:00-07:00">
                 Published: Sun 16 October 2016
@@ -31,7 +36,7 @@
         </address>
 <p>In <a href="/category/machine-learning.html">Machine Learning</a>.</p>
 
-</footer><!-- /.post-info --><h3>Introduction</h3>
+</footer><!-- /.post-info -->      <h3>Introduction</h3>
 <p>Enron was a publicly traded American energy company that saw rapid declines in stock price between 2000 and 2001 from \$90 to less than \$1 per share, with many employees selling shares in advance of the worst of these declines.  The company filed for bankruptcy shortly after, and several former employees were convicted on fraud and insider trading charges.  Investigations revealed accounting practices that misled the public on the health of the company, and the unexpected bankruptcy was at the time the largest Chapter 11 filing ever.  The subsequent charges, investigations, and finding reveal many employees knew that fraud was occuring.  In addition, the investigations have led to the public release of thousands of emails and financial records on many employees.  These documents make for an interesting dataset to analyze and attempt to classify fraudulent employees.</p>
 <p>The goal of this project is to analyze this publically available data using machine learning methods to identify persons of interest (POIs) and in the process identify useful features, compare classifiers, and tune them to provide the most useful POI classification.  Enron was not the only company to lose significant value unexpectedly and a miriad of similar events, particularly related to the housing market, led to the Great Recession.  Company fraud and identifying unusual business practice has gained more attention than ever before particularly with the emergence of highly available machine learning techniques.  By understanding the features and patterns that reflect unusual employee activity, appropriate machine learning techniques can be applied to detect fraud within companies before the public damage can occur.</p>
 <hr>
@@ -198,8 +203,11 @@ My array of values for PCA was n_components = [3, 5, 7, 9, 11, 13] where n_compo
 <p>The precision of my classifier is a bit low, though still above 0.3 while the recall performs better.  Given that I am attempting to identify POIs positively, the recall value may be considered more important than the precision.  A low precision means that there are several false positives and some innocent people are being flagged.  These false positives may be tolerated more than false negatives (missing people who actually were POIs). Considering the definition of POI was 'person of interest' and not as absolutely guilty person, higher importance on recall seems reasonable as it could warrant further potentially exonerating investigation in the case the person was actually innocent.  And who knows, perhaps some guilty Enron people got off the hook without any charges or investigations.</p>
 <hr>
 <p>[1] https://public.tableau.com/profile/diego2420#!/vizhome/Udacity/UdacityDashboard</p>
-<p>[2] http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html</p>                </article>
-            </aside><!-- /#featured -->
+<p>[2] http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
